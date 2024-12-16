@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
+import Navbar from "../components/Navbar";
 
 export default function FAQ() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -25,6 +26,10 @@ export default function FAQ() {
   ];
 
   return (
+    <>
+    <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-gray-100">
+    
+    <Navbar/>
     <div className="min-h-screen pt-24">
       <div className="container mx-auto px-4 py-16">
         <h1 className="text-4xl font-bold text-center mb-12">FAQ</h1>
@@ -50,5 +55,7 @@ export default function FAQ() {
         </div>
       </div>
     </div>
+    </div>
+    </>
   );
 }
