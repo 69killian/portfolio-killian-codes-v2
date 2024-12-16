@@ -7,13 +7,19 @@ import Contact from './pages/Contact';
 import Pricing from './pages/Pricing';
 import FAQ from './pages/FAQ';
 
-function App() {
+export default function App() {
   useEffect(() => {
     const link = document.createElement('link');
     link.href = 'https://fonts.googleapis.com/css2?family=Rethink+Sans:wght@400;500;700&display=swap';
     link.rel = 'stylesheet';
     document.head.appendChild(link);
+    
+    // Cleanup function to remove the link when component is unmounted
+    return () => {
+      document.head.removeChild(link);
+    };
   }, []);
+
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-gray-100">
@@ -28,5 +34,3 @@ function App() {
     </Router>
   );
 }
-
-export default App;

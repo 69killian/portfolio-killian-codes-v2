@@ -3,7 +3,11 @@ import React from 'react';
 import Testimonials from '../components/Testimonials';
 import Hero from '../components/Hero';
 import Service from '../components/Service';
-import Particles from '@/components/ui/particles';
+import dynamic from 'next/dynamic';
+
+const Particles = dynamic(() => import('@/components/ui/particles'), {
+  ssr: false, // Disable server-side rendering for this component
+});
 
 
 export default function Home() {
