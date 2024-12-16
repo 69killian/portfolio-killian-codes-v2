@@ -1,3 +1,4 @@
+"use client";
 import React from 'react'
 import { Code2, Rocket, Database } from 'lucide-react';
 
