@@ -15,9 +15,9 @@ const Hero = () => {
       </p>
       <div className="flex flex-wrap justify-center items-center gap-3">
         {/* Boutons alignés */}
-        <Button name="Téléchargez mon CV" />
+        <Button name="Télécharger mon CV" />
         <div className="mt-1">
-          <GrayButton name="Travaillez avec moi" />
+          <GrayButton name="Travailler avec moi" />
         </div>
       </div>
     </header>

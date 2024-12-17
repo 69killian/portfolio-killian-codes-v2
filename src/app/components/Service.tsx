@@ -1,30 +1,228 @@
 "use client";
-import React from 'react'
-import { Code2, Rocket, Database } from 'lucide-react';
+import React from "react";
+import SectionButton from "./SectionButton";
+import { CSSProperties } from "react";
+import Terminal from "../../../public/terminal.png";
+import DataBase from "../../../public/database.png";
+import Image from "next/image";
+import Figma from "../../../public/figma.png";
+import FigmaLittle from "../../../public/figma-icon-one-color.svg";
+import NextJs from '../../../public/nextjs.svg';
+import Tailwind from '../../../public/tailwind.svg';
+import Vercel from '../../../public/vercel.svg';
+import Stripe from '../../../public/stripe-3.svg';
+import MongoDB from '../../../public/mongodb-icon-1.svg';
+import Laravel from '../../../public/laravel-wordmark-1.svg'
+import NumberTicker from "@/components/ui/number-ticker";
 
 const Service = () => {
   return (
-    <section className="container mx-auto px-4 py-16">
-        <h2 className="text-4xl font-bold text-center mb-12">Mes Services</h2>
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="p-6 rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 hover:scale-105 transition-transform duration-300">
-            <Code2 className="w-12 h-12 mb-4 text-gray-300" />
-            <h3 className="text-xl font-bold mb-4">Développement Next.js</h3>
-            <p className="text-gray-400">Applications web modernes et performantes avec React et Next.js</p>
+    <>
+      <section className="container mx-auto px-4 pb-[210px] font-rethink">
+        <div className="text-start mb-8">
+          <SectionButton name="MES SERVICES" />
+        </div>
+
+        <div className="flex flex-col md:flex-row items-start md:items-center justify-between pb-[50px]">
+          <h2 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
+            Là Où Vos Idées Rencontrent
+            <br /> L’Excellence Technique.
+          </h2>
+
+          {/* Glass effect container */}
+          <div
+  className="relative w-full md:w-1/2 h-64 mt-8 md:mt-0 p-6 rounded-3xl bg-gradient-to-b from-white/20 to-gray-400/10 backdrop-blur-xl border border-gray-200/30 shadow-lg"
+  style={{
+    backgroundImage: `
+      radial-gradient(circle at top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
+      linear-gradient(to bottom, rgba(255, 255, 255, 0.1), rgba(0, 0, 0, 0.2)) 
+    `,
+  }}
+>
+  <div className="absolute -top-12 -left-12 w-40 h-40 bg-white opacity-20 rounded-full blur-2xl "></div>
+  <div className="absolute top-12 right-12 w-32 h-32 bg-gradient-to-r from-blue-400 to-purple-500 opacity-50 rounded-full blur-lg"></div>
+  <div className="relative z-10">
+    <h3 className="text-2xl font-semibold text-gray-200 mb-4">
+      Une Expertise qui Va au-delà des Standards
+    </h3>
+    <p className="text-gray-300 text-sm">
+      Avec une approche centrée sur l&apos;utilisateur, je conçois des applications performantes, esthétiques, et adaptées à vos besoins.
+    </p>
+    <p className="whitespace-pre-wrap text-8xl font-medium tracking-tighter text-black dark:text-white">
+    </p>
+  </div>
+  {/* Marquee effect with logos */}
+ <div className="absolute bottom-4 left-0 w-full overflow-hidden">
+    <div className="flex animate-marquee-logos">
+    <Image src={NextJs} alt="Terminal Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Tailwind} alt="Figma Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={FigmaLittle} alt="Figma Logo" width={20} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Vercel} alt="Database Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      
+      <div className="flex items-center ">
+      <Image src={MongoDB} alt="Database Logo" width={30} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }} />
+     <span className="font-rethink font-bold ml-[-20px] mr-[50px]">MongoDB</span> 
+      </div>
+      <Image src={Stripe} alt="Terminal Logo" width={50} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Laravel} alt="Terminal Logo" width={50} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={NextJs} alt="Terminal Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Tailwind} alt="Figma Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={FigmaLittle} alt="Figma Logo" width={20} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Vercel} alt="Database Logo" width={80} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      
+      <div className="flex items-center ">
+      <Image src={MongoDB} alt="Database Logo" width={30} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }} />
+     <span className="font-rethink font-bold ml-[-20px] mr-[50px]">MongoDB</span> 
+      </div>
+      <Image src={Stripe} alt="Terminal Logo" width={50} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+      <Image src={Laravel} alt="Terminal Logo" width={50} height={80} className="mx-4" style={{ filter: "brightness(0) invert(1)" }}/>
+    </div>
+  </div>
+</div>
+</div>
+
+
+
+            <div>
+
+            <span className="text-[20px]">+</span>
+        <NumberTicker 
+                value={20} 
+                suffix=" Projets Réalisés" 
+                direction="up" 
+                delay={1} 
+                className="text-[20px] text-white" 
+                decimalPlaces={0} 
+              />
+              <br />
+              <span className="text-[20px]">+</span>
+              <NumberTicker 
+                value={4} 
+                suffix=" Clients Satisfaits" 
+                direction="up" 
+                delay={1} 
+                className="text-[20px] text-white" 
+                decimalPlaces={0} 
+              />
+              </div>
+
+
+        <div className="grid md:grid-cols-3 gap-8 mt-12">
+          <div
+            style={{
+              "--background": "17 24 39",
+              "--highlight": "156 156 156",
+              "--bg-color":
+                "linear-gradient(rgb(var(--background)), rgb(var(--background)))",
+              "--border-color": `linear-gradient(160deg,
+                rgb(var(--highlight)) 0%,
+                rgb(var(--highlight) / 0.3) 33.33%,
+                rgb(var(--highlight) / 0.14) 66.67%,
+                rgb(var(--highlight) / 0.1) 100%)`,
+            } as CSSProperties}
+            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
+            shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
+          >
+            <div
+              className="absolute top-[-210px] left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] bg-white opacity-20 rounded-full"
+              style={{
+                zIndex: 0,
+                filter: "blur(80px)",
+              }}
+            ></div>
+            <Image
+              src={Terminal}
+              alt="Terminal Image"
+              width={30}
+              height={200}
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+            <h3 className="text-xl font-bold mb-4">Analyse de projet</h3>
+            <p className="text-gray-400">
+              - Compréhension des besoins métier du client (problèmes,
+              objectifs, utilisateurs cibles) <br />- Rédaction d’un cahier des
+              charges technique et fonctionnel
+            </p>
           </div>
-          <div className="p-6 rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 hover:scale-105 transition-transform duration-300">
-            <Database className="w-12 h-12 mb-4 text-gray-300" />
-            <h3 className="text-xl font-bold mb-4">Solutions PHP</h3>
-            <p className="text-gray-400">Applications robustes et évolutives avec PHP moderne</p>
+
+          <div
+            style={{
+              "--background": "17 24 39",
+              "--highlight": "156 156 156",
+              "--bg-color":
+                "linear-gradient(rgb(var(--background)), rgb(var(--background)))",
+              "--border-color": `linear-gradient(160deg,
+                rgb(var(--highlight)) 0%,
+                rgb(var(--highlight) / 0.3) 33.33%,
+                rgb(var(--highlight) / 0.14) 66.67%,
+                rgb(var(--highlight) / 0.1) 100%)`,
+            } as CSSProperties}
+            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
+            shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
+          >
+            <div
+              className="absolute top-[-210px] left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] bg-white opacity-20 rounded-full"
+              style={{
+                zIndex: 0,
+                filter: "blur(80px)",
+              }}
+            ></div>
+            <Image
+              src={Figma}
+              alt="Terminal Image"
+              width={30}
+              height={200}
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+            <h3 className="text-xl font-bold mb-4">Intégration de Maquettes</h3>
+            <p className="text-gray-400">
+              - Réalisation de wireframes et prototypes <br />- Validation des
+              maquettes par le client avant le développement
+            </p>
           </div>
-          <div className="p-6 rounded-lg bg-gradient-to-b from-gray-800 to-gray-900 hover:scale-105 transition-transform duration-300">
-            <Rocket className="w-12 h-12 mb-4 text-gray-300" />
-            <h3 className="text-xl font-bold mb-4">Optimisation</h3>
-            <p className="text-gray-400">Amélioration des performances et de l&apos;expérience utilisateur</p>
+
+          <div
+            style={{
+              "--background": "17 24 39",
+              "--highlight": "156 156 156",
+              "--bg-color":
+                "linear-gradient(rgb(var(--background)), rgb(var(--background)))",
+              "--border-color": `linear-gradient(160deg,
+                rgb(var(--highlight)) 0%,
+                rgb(var(--highlight) / 0.3) 33.33%,
+                rgb(var(--highlight) / 0.14) 66.67%,
+                rgb(var(--highlight) / 0.1) 100%)`,
+            } as CSSProperties}
+            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
+            shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
+          >
+            <div
+              className="absolute top-[-210px] left-1/2 transform -translate-x-1/2 w-[200px] h-[200px] bg-white opacity-20 rounded-full"
+              style={{
+                zIndex: 0,
+                filter: "blur(80px)",
+              }}
+            ></div>
+            <Image
+              src={DataBase}
+              alt="Terminal Image"
+              width={30}
+              height={200}
+              style={{ filter: "brightness(0) invert(1)" }}
+            />
+            <h3 className="text-xl font-bold mb-4">Développement full-stack</h3>
+            <p className="text-gray-400">
+              - Construction des API selon le choix de stack <br />- Travail de
+              fond sur les performances et le SEO
+            </p>
           </div>
         </div>
       </section>
-  )
-}
+    </>
+  );
+};
 
-export default Service
+export default Service;

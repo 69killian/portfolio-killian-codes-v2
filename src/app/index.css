@@ -15,6 +15,10 @@
   animation: marquee 30s linear infinite;
 }
 
+.animate-marquee-logos {
+  animation: marquee 30s linear infinite;
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;
@@ -83,3 +87,4 @@
 .text-shadow {
   text-shadow: 2px 1px 10px rgba(255, 255, 255, 0.2); /* Ombre blanche */
 }
+
