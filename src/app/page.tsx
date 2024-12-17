@@ -7,6 +7,7 @@ import Service from './components/Service';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import About from './components/About';
+import './index.css';
 
 // Chargement dynamique de Particles sans SSR
 const Particles = dynamic(() => import('@/components/ui/particles'), {
