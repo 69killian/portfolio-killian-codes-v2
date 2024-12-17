@@ -41,8 +41,10 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
           } as CSSProperties
         }
         className={cn(
-          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 px-4 py-2 text-white  rounded-full dark:text-black",
+          "group relative z-0 flex cursor-pointer items-center justify-center overflow-hidden whitespace-nowrap border border-white/10 text-white rounded-full dark:text-black",
           "transform-gpu transition-transform duration-300 ease-in-out active:translate-y-px",
+          "px-4 py-2 text-sm", // Default padding and text size
+          "w-[129px] h-[40px] sm:h-[40px] lg:w-auto lg:h-[46px] sm:w-auto sm:px-6 sm:py-3 sm:text-base hover:bg-gray-800 transition-all duration-300", // Responsive size for small screens
           className,
         )}
         ref={ref}
@@ -74,7 +76,6 @@ const ShimmerButton = React.forwardRef<HTMLButtonElement, ShimmerButtonProps>(
             "transform-gpu transition-all duration-300 ease-in-out",
 
             // on hover
-            
 
             // on click
             "group-active:shadow-[inset_0_-10px_10px_#ffffff3f]",

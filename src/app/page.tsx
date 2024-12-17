@@ -6,6 +6,7 @@ import Hero from './components/Hero';
 import Service from './components/Service';
 import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
+import About from './components/About';
 
 // Chargement dynamique de Particles sans SSR
 const Particles = dynamic(() => import('@/components/ui/particles'), {
@@ -30,7 +31,7 @@ export default function Index() {
     <Navbar/>
     <div className="min-h-screen bg-gradient-to-br from-black via-gray-900 to-black text-gray-100">
       {/* Arrière-plan avec particules */}
-      <div className="absolute inset-0 z-0 py-[120px]">
+      <div className="absolute inset-0 z-0 py-[80px]">
         <Particles />
       </div>
 
@@ -38,6 +39,8 @@ export default function Index() {
       <div className="pt-24">
         {/* Section Hero */}
         <Hero />
+
+        <About/>
 
         {/* Section Services */}
         <Service />
