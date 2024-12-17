@@ -48,9 +48,8 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="py-6 overflow-hidden font-rethink">
-      <h2 className="text-4xl font-bold text-center mb-12">Ils me font confiance</h2>
-      <div className="flex animate-marquee">
+    <div className="overflow-hidden font-rethink">
+      <div className="flex animate-marquee-reversed">
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={index}

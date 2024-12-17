@@ -2,6 +2,7 @@
 
 import { useEffect } from 'react';
 import Testimonials from './components/Testimonials';
+import TestimonialsReversed from './components/TestimonialsReversed';
 import Hero from './components/Hero';
 import Service from './components/Service';
 import dynamic from 'next/dynamic';
@@ -48,6 +49,8 @@ export default function Index() {
 
         {/* Section Testimonials */}
         <Testimonials />
+
+        <TestimonialsReversed />
       </div>
     </div>
     </>
