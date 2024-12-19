@@ -12,6 +12,7 @@ import FAQ from './components/faq';
 import Contact from './components/Contact';
 import Pricing from './components/Pricing';
 import Navbar from './components/Navbar';
+import Projects from './components/Projects';
 
 // Chargement dynamique de Particles sans SSR
 const Particles = dynamic(() => import('@/components/ui/particles'), {
@@ -49,6 +50,8 @@ export default function Index() {
 
         {/* Section Services */}
         <Service />
+
+        <Projects/>
 
         {/* Section Testimonials */}
         <Testimonials />

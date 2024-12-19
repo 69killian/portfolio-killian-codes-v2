@@ -48,8 +48,9 @@ export default function Pricing() {
               <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Design responsive </li>
               <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Animations et transitions fluides </li>
               <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Intégration de Formulaires (inscription, contact) </li>
-              <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Système d&apos;authentification (souscription) </li>
+              <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Système d&apos;authentification </li>
               <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Intégration de Stripe (souscription) </li>
+              <li className="flex items-center"><CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" /> Livraison en 2/3 semaines </li>
             </ul>
           </div>
 
@@ -131,7 +132,7 @@ export default function Pricing() {
                     </li>
                     <li className="flex items-center">
                         <CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
-                        Système d&apos;authentification (souscription)
+                        Système d&apos;authentification
                     </li>
                     <li className="flex items-center">
                         <CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
@@ -144,6 +145,10 @@ export default function Pricing() {
                     <li className="flex items-center">
                         <CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
                         Déploiement
+                    </li>
+                    <li className="flex items-center">
+                        <CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
+                        Livraison selon la durée du contrat 
                     </li>
                     <li className="flex items-center">
                         <CheckCircle className="w-7 h-7 mr-2 text-gray-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
