@@ -2,7 +2,6 @@
 import React from "react";
 import { Button } from "./Button";
 import GrayButton from "./GrayButton";
-import MarqueeProject from "./MarqueeProject";
 
 
 const Hero = () => {

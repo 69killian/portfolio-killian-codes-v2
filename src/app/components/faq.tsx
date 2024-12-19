@@ -3,6 +3,7 @@
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Navbar from "../components/Navbar";
+import SectionButton from '../components/SectionButton';
 
 export default function FAQ() {
   const [activeFaq, setActiveFaq] = useState<number | null>(null);
@@ -43,10 +44,16 @@ export default function FAQ() {
   return (
     <>
       <Navbar />
-      <div className="min-h-screen pt-24 font-rethink">
+      <div className=" pt-24 font-rethink pb-[150px]">
+        
+        
         <div className="container mx-auto px-4 py-16 flex items-start justify-between">
           {/* Titre à gauche */}
+          
           <div className="w-full md:w-2/3 pr-8">
+          <div className='mb-10'>
+            <SectionButton name='FAQ'/>
+            </div>
             <h2 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
               Toutes Les Réponses Dont Vous Avez Besoin.
             </h2>
