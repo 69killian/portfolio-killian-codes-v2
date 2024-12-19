@@ -11,6 +11,19 @@
   }
 }
 
+@keyframes marquee-projects {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-marquee-projects {
+  animation: marquee-projects 60s linear infinite;
+}
+
 .animate-marquee {
   animation: marquee 30s linear infinite;
 }
@@ -18,6 +31,7 @@
 .animate-marquee-logos {
   animation: marquee 30s linear infinite;
 }
+
 
 @keyframes marquee-reversed {
   0% {

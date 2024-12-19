@@ -2,6 +2,8 @@
 import React from "react";
 import { Button } from "./Button";
 import GrayButton from "./GrayButton";
+import MarqueeProject from "./MarqueeProject";
+
 
 const Hero = () => {
   return (
@@ -13,13 +15,15 @@ const Hero = () => {
       <p className="relative text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50">
         Transformez votre vision en réalité avec des solutions web <br /> performantes et sur mesure
       </p>
-      <div className="flex flex-wrap justify-center items-center gap-3">
+      <div className="flex flex-wrap justify-center items-center gap-3 mb-6">
         {/* Boutons alignés */}
         <Button name="Télécharger mon CV" />
         <div className="mt-1">
           <GrayButton name="Travailler avec moi" />
         </div>
       </div>
+
+      
     </header>
   );
 };

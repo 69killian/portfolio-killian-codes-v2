@@ -1,8 +1,10 @@
 import React from "react";
+import Image from "next/image";
+import test from "../../../public/test.png";
 
 const BorderButton = () => {
   return (
-    <button
+    <div
       style={{
         "--background": "17 24 39",
         "--highlight": "156 156 156",
@@ -12,17 +14,17 @@ const BorderButton = () => {
       className="relative w-48 px-6 py-3 rounded-[10px] border border-transparent text-center text-white font-semibold 
       [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
       shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] 
-      overflow-hidden transition-all duration-300 ease-in-out hover:border-[rgb(var(--highlight))]"
+      overflow-hidden transition-all duration-300 ease-in-out hover:border-[rgb(var(--highlight))] cursor-pointer"
     >
       <div
-        className="absolute inset-0 bg-white opacity-10 rounded-[10px]"
+        className="absolute inset-0 bg-white opacity-10 rounded-[10px] cursor-pointer"
         style={{
           filter: "blur(40px)",
           zIndex: 0,
         }}
       ></div>
-      <span className="relative z-10">Click Me</span>
-    </button>
+      <span className="relative z-10 flex justify-center items-center gap-2">Contactez Moi <Image src={test} alt="test" width={30} height={0}/></span>
+    </div>
   );
 };
 

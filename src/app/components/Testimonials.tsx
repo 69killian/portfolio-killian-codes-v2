@@ -61,7 +61,7 @@ export default function Testimonials() {
           <p className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
           De vrais témoignages, par de vrais clients, pour des résultats <br /> qui parlent d&apos;eux-mêmes.
       </p>
-      <div className='text-center mb-10'>
+      <div className='flex justify-center mb-10'>
       <BorderButton/>
       </div>
       <div className="flex animate-marquee">

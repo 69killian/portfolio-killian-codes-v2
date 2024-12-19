@@ -9,6 +9,7 @@ import dynamic from 'next/dynamic';
 import Navbar from './components/Navbar';
 import About from './components/About';
 import './index.css';
+import FAQ from './components/faq';
 
 // Chargement dynamique de Particles sans SSR
 const Particles = dynamic(() => import('@/components/ui/particles'), {
@@ -51,6 +52,8 @@ export default function Index() {
         <Testimonials />
 
         <TestimonialsReversed />
+
+        <FAQ/>
       </div>
     </div>
     </>

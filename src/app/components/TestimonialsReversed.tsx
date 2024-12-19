@@ -48,7 +48,7 @@ const testimonials = [
 
 export default function Testimonials() {
   return (
-    <div className="overflow-hidden font-rethink">
+    <div className="overflow-hidden font-rethink pb-[150px]">
       <div className="flex animate-marquee-reversed">
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
