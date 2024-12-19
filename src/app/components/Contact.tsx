@@ -1,7 +1,7 @@
 "use client";
 
 import { Phone, Mail, MapPin } from 'lucide-react';
-import Navbar from '../components/Navbar';
+import SectionButton from "./SectionButton";
 
 export default function Contact() {
   const dynamicStyle = {
@@ -13,9 +13,17 @@ export default function Contact() {
 
   return (
     <>
-      <Navbar />
-      <div className="container mx-auto px-4 pb-[150px] font-rethink">
-        <h1 className="text-4xl font-bold text-center mb-12">Contactez-moi</h1>
+      <div className="container mx-auto px-4 py-[150px] font-rethink">
+      <div className='text-center mb-10'>
+      <SectionButton name='TARIFS'/>
+      </div>
+      
+       <h2 className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
+        Partant(e) ? <br />Travaillons ensemble.
+          </h2>
+          <p className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
+          Je vous propose que nous discutions ensemble de votre projet, afin d&apos;avoir une vision d&apos;ensemble de ce que vous souhaitez.
+      </p>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
           <div

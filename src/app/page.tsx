@@ -6,11 +6,12 @@ import TestimonialsReversed from './components/TestimonialsReversed';
 import Hero from './components/Hero';
 import Service from './components/Service';
 import dynamic from 'next/dynamic';
-import Navbar from './components/Navbar';
 import About from './components/About';
 import './index.css';
 import FAQ from './components/faq';
 import Contact from './components/Contact';
+import Pricing from './components/Pricing';
+import Navbar from './components/Navbar';
 
 // Chargement dynamique de Particles sans SSR
 const Particles = dynamic(() => import('@/components/ui/particles'), {
@@ -53,6 +54,8 @@ export default function Index() {
         <Testimonials />
 
         <TestimonialsReversed />
+
+        <Pricing/>
 
         <FAQ/>
 

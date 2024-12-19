@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
-import Navbar from "../components/Navbar";
 import SectionButton from '../components/SectionButton';
 
 export default function FAQ() {
@@ -43,7 +42,6 @@ export default function FAQ() {
 
   return (
     <>
-      <Navbar />
       <div className=" pt-24 font-rethink pb-[150px]">
         
         
