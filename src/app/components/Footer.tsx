@@ -81,12 +81,12 @@ const Footer = () => {
           <h3 className="text-white text-xl font-semibold mb-4">Produits</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#pricing1" className="hover:text-white">
                 Landing Page Sur Mesure
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#pricing2" className="hover:text-white">
                 Service aux Entreprises
               </a>
             </li>
@@ -98,17 +98,17 @@ const Footer = () => {
           <h3 className="text-white text-xl font-semibold mb-4">Communaté</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-white">
+              <a target='_blank' href="https://www.spikes.dev/" className="hover:text-white">
               Spikes
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a target='_blank' href="https://www.linkedin.com/in/killian-marty-557b78334/" className="hover:text-white">
                 Linkedin
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a target='_blank' href="https://github.com/69killian" className="hover:text-white">
                 GitHub
               </a>
             </li>
@@ -120,37 +120,37 @@ const Footer = () => {
           <h3 className="text-white text-xl font-semibold mb-4">About</h3>
           <ul className="space-y-2">
             <li>
-              <a href="#" className="hover:text-white">
-                Mon Histoire
+              <a href="#about" className="hover:text-white">
+                A propos
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#services" className="hover:text-white">
                 Mes Services
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#projects" className="hover:text-white">
                 Mes Projets
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#testimonials" className="hover:text-white">
                 Avis
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#pricing" className="hover:text-white">
                 Tarifs
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#faq" className="hover:text-white">
                 Faq
               </a>
             </li>
             <li>
-              <a href="#" className="hover:text-white">
+              <a href="#contact" className="hover:text-white">
                 Contact
               </a>
             </li>

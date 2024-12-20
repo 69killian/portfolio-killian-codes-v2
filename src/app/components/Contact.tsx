@@ -12,7 +12,7 @@ export default function Contact() {
     },[]);
   return (
     <>
-      <div className="container mx-auto px-4 py-[150px] font-rethink">
+      <div id='contact' className="container mx-auto px-4 py-[150px] font-rethink">
       <div className='text-center mb-10'>
       <SectionButton name='CONTACT'/>
       </div>

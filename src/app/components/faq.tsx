@@ -48,7 +48,7 @@ export default function FAQ() {
 
   return (
     <>
-      <div data-aos='fade up' className="pt-24 font-rethink pb-[150px]">
+      <div id='faq' data-aos='fade up' className="pt-24 font-rethink pb-[150px]">
         <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-start justify-between">
           {/* Titre à gauche */}
           <div className="w-full md:w-2/3 pr-8 mb-10">

@@ -15,7 +15,7 @@ export default function Pricing() {
 
   return (
     <>
-      <div data-aos='fade up' className="container mx-auto px-4 py-16 pb-[150px] font-rethink">
+      <div id="pricing" data-aos='fade up' className="container mx-auto px-4 py-16 pb-[150px] font-rethink">
       <div className='text-center mb-10'>
       <SectionButton name='TARIFS'/>
       </div>
@@ -29,7 +29,7 @@ export default function Pricing() {
 
       
         <div data-aos='fade up' className="flex  flex-col sm:flex-col md:flex-col lg:flex-row gap-8 max-w-4xl mx-auto items-start justify-center">
-          <div data-aos='fade up'
+          <div data-aos='fade up' id='pricing1'
             className=" relative flex-none w-[400px] sm:w-[400px] md:w-[480px] lg:w-[480px] mx-auto p-6 bg-gray-900 overflow-hidden rounded-[35px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10"
           >
             <div
@@ -61,7 +61,7 @@ export default function Pricing() {
             </ul>
           </div>
 
-            <div data-aos='fade up'
+            <div data-aos='fade up' id='pricing2'
                 className="relative flex-none w-[400px] sm:w-[550px] md:w-[600px] lg:w-[600px] xl:w-[600px] mx-auto p-6 bg-gray-900 overflow-hidden rounded-[35px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10"
                 style={{
                     boxShadow: "0 4px 40px rgba(255, 255, 255, 0.1)", // Ombre blanche avec un flou important

@@ -33,17 +33,17 @@ export default function Navbar() {
             {/* Contenu du menu */}
             <div className="relative flex items-center space-x-5 md:space-x-8">
               <li className="border-r border-gray-500/30 pr-5 md:pr-6">
-                <Link href="/" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
+                <Link href="#home" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
                   <span>Accueil</span>
                 </Link>
               </li>
               <li className="border-r border-gray-500/30 pr-5 md:pr-6">
-                <Link href="/pricing" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
+                <Link href="#pricing" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
                   <span>Tarifs</span>
                 </Link>
               </li>
               <li>
-                <Link href="/faq" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
+                <Link href="#faq" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
                   <span>FAQ</span>
                 </Link>
               </li>
@@ -52,7 +52,7 @@ export default function Navbar() {
 
           {/* Contact à droite */}
           <li className="mt-1 md:mt-0">
-            <Link href="/contact" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
+            <Link href="#contact" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
               <GrayButton name="Contact" />
             </Link>
           </li>

@@ -58,7 +58,7 @@ export default function Testimonials() {
     }, []);
 
   return (
-    <div data-aos='fade up' className="py-6 overflow-hidden font-rethink">
+    <div id='testimonials' data-aos='fade up' className="py-6 overflow-hidden font-rethink">
       <div className='text-center mb-10'>
       <SectionButton name='AVIS'/>
       </div>
@@ -101,6 +101,7 @@ export default function Testimonials() {
               ))}
             </div>
             {/* Comment in the center, aligned left */}
+            {/* mt-5 instead of mt-0 when i'll get comments from Malt */}
             <p className="text-gray-300 text-left text-[15px] mt-0 mb-10">{testimonial.content}</p>
             {/* Profile photo and name on bottom left */}
             <div className="absolute bottom-4 left-6 flex items-center ">

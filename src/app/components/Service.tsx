@@ -18,7 +18,7 @@ const Service = () => {
 
   return (
     <>
-      <section className="container mx-auto px-4 pb-[210px] font-rethink">
+      <section id="services" className="container mx-auto px-4 pb-[210px] font-rethink">
         <div className="text-start mb-8" data-aos="fade-up">
           <SectionButton name="MES SERVICES" />
         </div>

@@ -9,7 +9,7 @@ const About = () => {
   }, []);
 
   return (
-    <div className='flex flex-col mt-[50px] sm:mt-[100px] md:mt-[50px] lg:mt-[50px] justify-center items-center text-center pb-[220px] overflow-hidden'>
+    <div id="about" className='flex flex-col mt-[50px] sm:mt-[100px] md:mt-[50px] lg:mt-[50px] justify-center items-center text-center pb-[220px] overflow-hidden'>
       <SectionButton name='À PROPOS'/>
       <div className='mt-10'>
         <div className='font-rethink text-[15px] sm:text-[20px] md:text-[30px] lg:text-[40px] w-[400px] sm:w-[500px] md:w-[700px] lg:w-[980px] text-left line-clamp-7 text-gray-400'>
