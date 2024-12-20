@@ -41,6 +41,9 @@ export default function Index() {
       <div className="absolute inset-0 z-0 py-[80px]">
         <Particles />
       </div>
+      <div className="absolute inset-0 z-0 py-[80px]">
+        <Particles />
+      </div>
 
       {/* Contenu principal */}
       <div className="pt-24">
@@ -64,6 +67,7 @@ export default function Index() {
         <FAQ/>
 
         <Contact/>
+
         <Footer/>
       </div>
     </div>

@@ -6,7 +6,7 @@ import GrayButton from "./GrayButton";
 
 const Hero = () => {
   return (
-    <header className="relative container mx-auto px-4 py-[50px] sm:py-[90px] md:py-[100px] lg:py-[150px] text-center">
+    <header className="relative container mx-auto px-4 py-[200px] sm:py-[90px] md:py-[100px] lg:py-[150px] text-center">
       {/* Contenu du Hero */}
       <h1 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold mb-6 bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
         Je Délivre Des SaaS <br /> à Croissance Exponentielle.

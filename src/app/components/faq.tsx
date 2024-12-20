@@ -23,40 +23,37 @@ export default function FAQ() {
       answer:
         "Oui, je propose un support technique et des mises à jour pendant 3 mois après le lancement. Des contrats de maintenance à plus long terme sont également disponibles.",
     },
+     {
+      question: "Quelle est votre approche du développement web ?",
+      answer:
+        "Je privilégie une approche centrée sur la performance et l'expérience utilisateur. Chaque projet est développé avec les meilleures pratiques actuelles, en utilisant des technologies modernes comme Next.js et PHP pour créer des solutions robustes et évolutives.",
+    },
     {
-        question: "Quelle est votre approche du développement web ?",
-        answer:
-          "Je privilégie une approche centrée sur la performance et l'expérience utilisateur. Chaque projet est développé avec les meilleures pratiques actuelles, en utilisant des technologies modernes comme Next.js et PHP pour créer des solutions robustes et évolutives.",
-      },
-      {
-        question: "Combien de temps faut-il pour réaliser une landing page ?",
-        answer:
-          "Le délai typique pour une landing page sur mesure est de 2 à 3 semaines, incluant les phases de conception, développement et révisions. Ce délai peut varier selon la complexité du projet.",
-      },
-      {
-        question: "Proposez-vous un support après la mise en ligne ?",
-        answer:
-          "Oui, je propose un support technique et des mises à jour pendant 3 mois après le lancement. Des contrats de maintenance à plus long terme sont également disponibles.",
-      },
+      question: "Combien de temps faut-il pour réaliser une landing page ?",
+      answer:
+        "Le délai typique pour une landing page sur mesure est de 2 à 3 semaines, incluant les phases de conception, développement et révisions. Ce délai peut varier selon la complexité du projet.",
+    },
+    {
+      question: "Proposez-vous un support après la mise en ligne ?",
+      answer:
+        "Oui, je propose un support technique et des mises à jour pendant 3 mois après le lancement. Des contrats de maintenance à plus long terme sont également disponibles.",
+    },
   ];
 
   return (
     <>
-      <div className=" pt-24 font-rethink pb-[150px]">
-        
-        
-        <div className="container mx-auto px-4 py-16 flex items-start justify-between">
+      <div className="pt-24 font-rethink pb-[150px]">
+        <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-start justify-between">
           {/* Titre à gauche */}
-          
-          <div className="w-full md:w-2/3 pr-8">
-          <div className='mb-10'>
+          <div className="w-full md:w-2/3 pr-8 mb-10">
+          <div className="mb-10">
             <SectionButton name='FAQ'/>
             </div>
             <h2 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
               Toutes Les Réponses Dont Vous Avez Besoin.
             </h2>
             <p className="relative text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50">
-            Que vous soyez à la recherche d&apos;aide pour une commande, ou de solutions à vos questions fréquentes, cette section est conçue pour vous fournir des informations claires et complètes. 
+              Que vous soyez à la recherche d&apos;aide pour une commande, ou de solutions à vos questions fréquentes, cette section est conçue pour vous fournir des informations claires et complètes.
             </p>
           </div>
           
