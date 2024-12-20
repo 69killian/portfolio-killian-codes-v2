@@ -9,7 +9,7 @@ export default function Contact() {
     <>
       <div className="container mx-auto px-4 py-[150px] font-rethink">
       <div className='text-center mb-10'>
-      <SectionButton name='TARIFS'/>
+      <SectionButton name='CONTACT'/>
       </div>
       
        <h2 className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
