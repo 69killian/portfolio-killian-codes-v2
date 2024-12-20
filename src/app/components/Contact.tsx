@@ -1,10 +1,15 @@
 "use client";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 import { Phone, Mail, MapPin } from 'lucide-react';
 import SectionButton from "./SectionButton";
 
 export default function Contact() {
-
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    },[]);
   return (
     <>
       <div className="container mx-auto px-4 py-[150px] font-rethink">
@@ -12,15 +17,15 @@ export default function Contact() {
       <SectionButton name='CONTACT'/>
       </div>
       
-       <h2 className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
+       <h2 data-aos='fade up' className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
         Partant(e) ? <br />Travaillons ensemble.
           </h2>
-          <p className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
+          <p data-aos='fade up' className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
           Je vous propose que nous discutions ensemble de votre projet, afin d&apos;avoir une vision d&apos;ensemble de ce que vous souhaitez.
       </p>
 
         <div className="max-w-4xl mx-auto grid md:grid-cols-2 gap-8">
-        <div
+        <div data-aos='fade up'
             className="relative px-6 py-3 rounded-[25px] border-t-2 border-gray-300/10 text-center text-white font-semibold
             bg-gray-900 overflow-hidden shadow-md shadow-[#101010] p-1 h-[200px]"
             >
@@ -51,7 +56,7 @@ export default function Contact() {
         </div>
 
 
-        <form
+        <form data-aos='fade up'
             className="relative px-6 py-3 rounded-[25px] border-t-2 border-gray-300/10 text-center text-white font-semibold
             bg-gray-900 overflow-hidden shadow-md shadow-[#101010] p-1"
             >

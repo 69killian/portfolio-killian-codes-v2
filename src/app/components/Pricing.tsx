@@ -1,4 +1,7 @@
 "use client";
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React from 'react';
 import { Phone, CheckCircle } from 'lucide-react';
 import MarqueeTech from './MarqueeTech';
@@ -6,23 +9,27 @@ import SectionButton from '../components/SectionButton';
 import Particles from '@/components/ui/particles';
 
 export default function Pricing() {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    },[]);
+
   return (
     <>
-      <div className="container mx-auto px-4 py-16 pb-[150px] font-rethink">
+      <div data-aos='fade up' className="container mx-auto px-4 py-16 pb-[150px] font-rethink">
       <div className='text-center mb-10'>
       <SectionButton name='TARIFS'/>
       </div>
       
-       <h2 className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
-        Deux plans, Deux Options, Adaptées à Vos Besoins.
+       <h2 data-aos='fade up' className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
+        Deux plans, Deux Options, <br />Adaptées à Vos Besoins.
           </h2>
-          <p className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
+          <p data-aos='fade up' className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
           Afin de correspondre à vos envies personnelles, veuillez retrouver les plans de paiement que je propose pour mes services.
       </p>
 
       
-        <div className="flex  flex-col sm:flex-col md:flex-col lg:flex-row gap-8 max-w-4xl mx-auto items-start justify-center">
-          <div
+        <div data-aos='fade up' className="flex  flex-col sm:flex-col md:flex-col lg:flex-row gap-8 max-w-4xl mx-auto items-start justify-center">
+          <div data-aos='fade up'
             className=" relative flex-none w-[400px] sm:w-[400px] md:w-[480px] lg:w-[480px] mx-auto p-6 bg-gray-900 overflow-hidden rounded-[35px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10"
           >
             <div
@@ -33,7 +40,7 @@ export default function Pricing() {
               }}
             ></div>
             
-            <h3 className="text-2xl font-bold mb-4">Landing Page Sur Mesure</h3>
+            <h3 data-aos='fade up' className="text-2xl font-bold mb-4">Landing Page Sur Mesure</h3>
             <h3 className="text-2xl font-bold mb-4">997€</h3>
             <p className="text-gray-400 mb-6">Vous bénéficierez d&apos;une landing page au design original et soigné, pensée pour atteindre vos objectifs.</p>
             <a href="tel:+33600000000" className=" block w-full py-3 px-6 bg-gray-700 hover:bg-gray-800 text-center transition-colors duration-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10">
@@ -54,7 +61,7 @@ export default function Pricing() {
             </ul>
           </div>
 
-            <div
+            <div data-aos='fade up'
                 className="relative flex-none w-[400px] sm:w-[550px] md:w-[600px] lg:w-[600px] xl:w-[600px] mx-auto p-6 bg-gray-900 overflow-hidden rounded-[35px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10"
                 style={{
                     boxShadow: "0 4px 40px rgba(255, 255, 255, 0.1)", // Ombre blanche avec un flou important
@@ -75,7 +82,7 @@ export default function Pricing() {
                 ></div>
                 
                 {/* Titre principal */}
-                <h3 className="relative text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
+                <h3 data-aos='fade up' className="relative text-2xl sm:text-2xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
                     Service Aux <br /> Entreprises
                 </h3>
                 

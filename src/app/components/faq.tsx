@@ -1,5 +1,7 @@
 "use client";
-
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 import React, { useState } from "react";
 import { ChevronDown } from "lucide-react";
 import SectionButton from '../components/SectionButton';
@@ -40,28 +42,32 @@ export default function FAQ() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({duration: 1000});
+  },[]);
+
   return (
     <>
-      <div className="pt-24 font-rethink pb-[150px]">
+      <div data-aos='fade up' className="pt-24 font-rethink pb-[150px]">
         <div className="container mx-auto px-4 py-16 flex flex-col md:flex-row items-start justify-between">
           {/* Titre à gauche */}
           <div className="w-full md:w-2/3 pr-8 mb-10">
           <div className="mb-10">
             <SectionButton name='FAQ'/>
             </div>
-            <h2 className="relative text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
+            <h2 data-aos='fade up' className="relative text-4xl sm:text-5xl md:text-6xl lg:text-6xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden">
               Toutes Les Réponses Dont Vous Avez Besoin.
             </h2>
-            <p className="relative text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50">
+            <p data-aos='fade up' className="relative text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50">
               Que vous soyez à la recherche d&apos;aide pour une commande, ou de solutions à vos questions fréquentes, cette section est conçue pour vous fournir des informations claires et complètes.
             </p>
           </div>
           
           {/* FAQ à droite */}
-          <div className="w-full md:w-2/3">
+          <div data-aos='fade up' className="w-full md:w-2/3">
             <div className="max-w-2xl mx-auto space-y-4">
               {faqs.map((faq, index) => (
-                <div
+                <div data-aos='fade up'
                   key={index}
                   style={{
                     "--background": "17 24 39", // Couleur de fond dynamique

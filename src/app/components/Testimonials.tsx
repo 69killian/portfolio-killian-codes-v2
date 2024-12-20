@@ -1,7 +1,11 @@
+"use client";
 import React from 'react';
 import { Star } from 'lucide-react';
 import SectionButton from './SectionButton';
 import BorderButton from './BorderButton';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -49,22 +53,26 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+  useEffect(() => {
+      AOS.init({ duration: 1000 });
+    }, []);
+
   return (
-    <div className="py-6 overflow-hidden font-rethink">
+    <div data-aos='fade up' className="py-6 overflow-hidden font-rethink">
       <div className='text-center mb-10'>
       <SectionButton name='AVIS'/>
       </div>
       
-       <h2 className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-8xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
+       <h2 data-aos='fade up' className="text-center relative text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold bg-gradient-to-b from-white to-gray-500 text-transparent bg-clip-text font-rethink text-shadow z-10 overflow-hidden mb-10">
             Ce Que Mes Clients <br /> Pensent De Moi
           </h2>
-          <p className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
+          <p data-aos='fade up' className="relative text-center text-lg sm:text-xl text-white max-w-2xl mx-auto font-rethink z-10 text-gray-200/50 mb-10">
           De vrais témoignages, par de vrais clients, pour des résultats <br /> qui parlent d&apos;eux-mêmes.
       </p>
-      <div className='flex justify-center mb-10'>
+      <div data-aos='fade up' className='flex justify-center mb-10'>
       <BorderButton/>
       </div>
-      <div className="flex animate-marquee">
+      <div data-aos='fade up' className="flex animate-marquee">
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
             key={index}
@@ -87,12 +95,13 @@ export default function Testimonials() {
             ></div>
             {/* Stars at top-left */}
             <div className="absolute top-4 left-5 flex gap-1">
+              {/* IMPORTANT : Hidden till I get comments from Malt */}
               {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <Star key={i} className="w-6 h-6 text-yellow-500 fill-yellow-500 bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
+                <Star key={i} className="hidden w-6 h-6 text-yellow-500 fill-yellow-500 bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
               ))}
             </div>
             {/* Comment in the center, aligned left */}
-            <p className="text-gray-300 text-left text-[15px] mt-5 mb-10">{testimonial.content}</p>
+            <p className="text-gray-300 text-left text-[15px] mt-0 mb-10">{testimonial.content}</p>
             {/* Profile photo and name on bottom left */}
             <div className="absolute bottom-4 left-6 flex items-center ">
               <div className='bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-1 border-gray-300/10 mr-4'>

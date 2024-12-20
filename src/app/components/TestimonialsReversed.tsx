@@ -1,5 +1,9 @@
+"use client";
 import React from 'react';
 import { Star } from 'lucide-react';
+import { useEffect } from 'react';
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 const testimonials = [
   {
@@ -47,8 +51,12 @@ const testimonials = [
 ];
 
 export default function Testimonials() {
+    useEffect(() => {
+        AOS.init({duration: 1000});
+    },[]);
+
   return (
-    <div className="overflow-hidden font-rethink pb-[150px]">
+    <div data-aos="fade up" className="overflow-hidden font-rethink pb-[150px]">
       <div className="flex animate-marquee-reversed">
         {[...testimonials, ...testimonials].map((testimonial, index) => (
           <div
@@ -72,12 +80,14 @@ export default function Testimonials() {
             ></div>
             {/* Stars at top-left */}
             <div className="absolute top-4 left-5 flex gap-1">
+                {/* hidden till i get comments from Malt */}
               {Array.from({ length: testimonial.rating }).map((_, i) => (
-                <Star key={i} className="w-6 h-6 text-yellow-500 fill-yellow-500 bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
+                <Star key={i} className="hidden w-6 h-6 text-yellow-500 fill-yellow-500 bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10" />
               ))}
             </div>
             {/* Comment in the center, aligned left */}
-            <p className="text-gray-300 text-left text-[15px] mt-5 mb-10">{testimonial.content}</p>
+            {/* mt-5 instead of mt-0 when i'll get comments from Malt */}
+            <p className="text-gray-300 text-left text-[15px] mt-0 mb-10">{testimonial.content}</p>
             {/* Profile photo and name on bottom left */}
             <div className="absolute bottom-4 left-6 flex items-center ">
               <div className='bg-gray-800 rounded-full p-1 shadow-md shadow-[#101010] border-t-1 border-gray-300/10 mr-4'>
