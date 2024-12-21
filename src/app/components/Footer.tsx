@@ -6,6 +6,7 @@ import React from 'react';
 import Particles from '@/components/ui/particles';
 import Image from 'next/image';
 import LogoPortfolio2 from '../../../public/logoportfolio2.png';
+import Link from 'next/link';
 
 const Footer = () => {
     useEffect(() => {
@@ -77,93 +78,93 @@ const Footer = () => {
         </div>
 
         {/* Section Products */}
-        <div data-aos='fade up'>
-          <h3 className="text-white text-xl font-semibold mb-4">Produits</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#pricing1" className="hover:text-white">
-                Landing Page Sur Mesure
-              </a>
-            </li>
-            <li>
-              <a href="#pricing2" className="hover:text-white">
-                Service aux Entreprises
-              </a>
-            </li>
-          </ul>
-        </div>
+        <div data-aos="fade up">
+                    <h3 className="text-white text-xl font-semibold mb-4">Produits</h3>
+                    <ul className="space-y-2">
+                        <li>
+                            <Link href="#pricing1" className="hover:text-white">
+                                Landing Page Sur Mesure
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#pricing2" className="hover:text-white">
+                                Service aux Entreprises
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
 
-        {/* Section Community */}
-        <div data-aos='fade up'>
-          <h3 className="text-white text-xl font-semibold mb-4">Communaté</h3>
-          <ul className="space-y-2">
-            <li>
-              <a target='_blank' href="https://www.spikes.dev/" className="hover:text-white">
-              Spikes
-              </a>
-            </li>
-            <li>
-              <a target='_blank' href="https://www.linkedin.com/in/killian-marty-557b78334/" className="hover:text-white">
-                Linkedin
-              </a>
-            </li>
-            <li>
-              <a target='_blank' href="https://github.com/69killian" className="hover:text-white">
-                GitHub
-              </a>
-            </li>
-          </ul>
-        </div>
+                {/* Section Community */}
+                <div data-aos="fade up">
+                    <h3 className="text-white text-xl font-semibold mb-4">Communauté</h3>
+                    <ul className="space-y-2">
+                        <li>
+                            <Link target="_blank" href="https://www.spikes.dev/" className="hover:text-white">
+                                Spikes
+                            </Link>
+                        </li>
+                        <li>
+                            <Link target="_blank" href="https://www.linkedin.com/in/killian-marty-557b78334/" className="hover:text-white">
+                                LinkedIn
+                            </Link>
+                        </li>
+                        <li>
+                            <Link target="_blank" href="https://github.com/69killian" className="hover:text-white">
+                                GitHub
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
 
-        {/* Section About */}
-        <div data-aos='fade up'>
-          <h3 className="text-white text-xl font-semibold mb-4">About</h3>
-          <ul className="space-y-2">
-            <li>
-              <a href="#about" className="hover:text-white">
-                A propos
-              </a>
-            </li>
-            <li>
-              <a href="#services" className="hover:text-white">
-                Mes Services
-              </a>
-            </li>
-            <li>
-              <a href="#projects" className="hover:text-white">
-                Mes Projets
-              </a>
-            </li>
-            <li>
-              <a href="#testimonials" className="hover:text-white">
-                Avis
-              </a>
-            </li>
-            <li>
-              <a href="#pricing" className="hover:text-white">
-                Tarifs
-              </a>
-            </li>
-            <li>
-              <a href="#faq" className="hover:text-white">
-                Faq
-              </a>
-            </li>
-            <li>
-              <a href="#contact" className="hover:text-white">
-                Contact
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
+                {/* Section About */}
+                <div data-aos="fade up">
+                    <h3 className="text-white text-xl font-semibold mb-4">À propos</h3>
+                    <ul className="space-y-2">
+                        <li>
+                            <Link href="#about" className="hover:text-white">
+                                À propos
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#services" className="hover:text-white">
+                                Mes Services
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#projects" className="hover:text-white">
+                                Mes Projets
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#testimonials" className="hover:text-white">
+                                Avis
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#pricing" className="hover:text-white">
+                                Tarifs
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#faq" className="hover:text-white">
+                                FAQ
+                            </Link>
+                        </li>
+                        <li>
+                            <Link href="#contact" className="hover:text-white">
+                                Contact
+                            </Link>
+                        </li>
+                    </ul>
+                </div>
+            </div>
 
-      {/* Copyright */}
-      <div data-aos='fade up' className="mt-10 text-center pt-6">
-        <p className="text-gray-400">
-          &copy; {new Date().getFullYear()} Tous droits réservés. KillianCodes.
-        </p>
-      </div>
+            {/* Copyright */}
+            <div data-aos="fade up" className="mt-10 text-center pt-6">
+                <p className="text-gray-400">
+                    &copy; {new Date().getFullYear()} Tous droits réservés. KillianCodes.
+                </p>
+            </div>
     </footer>
   );
 };

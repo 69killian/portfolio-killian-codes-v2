@@ -10,7 +10,7 @@ import Link from 'next/link';
 
 const Projects = () => {
     useEffect(() => {
-        AOS.init({ duration: 1000 }); // Initialisation avec une durée d'animation de 1 seconde
+        AOS.init({ duration: 1000 }); 
       }, []);
 
   return (

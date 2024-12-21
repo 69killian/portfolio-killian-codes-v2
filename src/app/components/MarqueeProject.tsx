@@ -21,12 +21,12 @@ const MarqueeProject = () => {
       {/* Images défilantes organisées en colonnes */}
       <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-10 gap-8 items-center justify-center text-center">
         {[
-          { src: stripint, alt: "Stripint, Intégration Stripe", link: "https://github.com/69killian/landing-page-stripe-subscription" },
+          { src: stripint, alt: "Stripint, Intégration Stripe", link: "https://landing-page-stripe-subscription-two.vercel.app/" },
           { src: arcadia, alt: "Arcadia, Zoo de Bretagne", link: "https://github.com/69killian/Arcadia-Zoo" },
-          { src: shoesea, alt: "Shoesea, Site de chaussures en ligne", link: "https://github.com/69killian/Shoes-ecommerce-tailwind" },
+          { src: shoesea, alt: "Shoesea, Site de chaussures en ligne", link: "https://shoes-ecommerce-tailwind.vercel.app/" },
           { src: portfolio, alt: "Portfolio Personnel", link: "https://github.com/69killian/portfolio-killian-codes-v2" },
-          { src: pricing, alt: "Pricing Cards Challenge", link: "https://github.com/69killian/modern-landing-page-pricing-vuejs" },
-          { src: cards, alt: "Cards Product", link: "https://github.com/69killian/product-cards-spikes-challenge-react" },
+          { src: pricing, alt: "Pricing Cards Challenge", link: "https://modern-landing-page-pricing-vuejs.vercel.app/" },
+          { src: cards, alt: "Cards Product", link: "https://product-cards-spikes-challenge-react.vercel.app/" },
         ].map((image, index) => (
           <div key={index} data-aos="fade-up" className="relative group">
             {/* Envelopper l'image avec un lien */}
