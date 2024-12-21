@@ -20,7 +20,7 @@ const Footer = () => {
         <Particles />
       </div>
 
-      <div data-aos='fade up'>
+
       <div
     className="absolute overflow-hidden top-[-400px] right-[200] transform -translate-x-1/2 rotate-[70deg] w-[30px] h-[1200px] rounded-full"
     style={{
@@ -65,7 +65,6 @@ const Footer = () => {
                     }}
                 ></div>
 
-</div>
 
       {/* Contenu du footer */}
       <div className="relative max-w-7xl mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 z-10">
