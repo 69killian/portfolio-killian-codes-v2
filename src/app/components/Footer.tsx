@@ -22,7 +22,8 @@ const Footer = () => {
 
 
       <div
-    className="absolute overflow-hidden top-[-400px] right-[200] transform -translate-x-1/2 rotate-[70deg] w-[30px] h-[1200px] rounded-full"
+    className="absolute overflow-hidden top-[-450px] right-1/4 transform translate-x-1/2
+ transform -translate-x-1/2 rotate-[70deg] w-[30px] h-[1200px] rounded-full"
     style={{
         zIndex: 0,
         filter: "blur(40px)",
@@ -31,7 +32,7 @@ const Footer = () => {
     }}
 ></div>
 <div 
-    className="absolute overflow-hidden top-[-200px] right-[200] transform -translate-x-1/2 rotate-[50deg] w-[10px] h-[1200px] rounded-full"
+    className="absolute overflow-hidden top-[-250px] right-1/4 transform translate-x-1/2 rotate-[50deg] w-[10px] h-[1200px] rounded-full"
     style={{
         zIndex: 0,
         filter: "blur(20px)",
@@ -40,7 +41,7 @@ const Footer = () => {
     }}
 ></div>
 <div 
-    className="absolute overflow-hidden top-[-200px] right-[200] transform -translate-x-1/2 rotate-[50deg] w-[10px] h-[1200px] rounded-full"
+    className="absolute overflow-hidden top-[-250px] right-1/4 transform translate-x-1/2 rotate-[50deg] w-[10px] h-[1200px] rounded-full"
     style={{
         zIndex: 0,
         filter: "blur(20px)",
@@ -49,7 +50,7 @@ const Footer = () => {
     }}
 ></div>
 <div 
-    className="absolute overflow-hidden top-[-300px] right-[200] transform -translate-x-1/2 rotate-[60deg] w-[10px] h-[1200px] rounded-full"
+    className="absolute overflow-hidden top-[-350px] right-1/4 transform translate-x-1/2 rotate-[60deg] w-[10px] h-[1200px] rounded-full"
     style={{
         zIndex: 0,
         filter: "blur(20px)",
@@ -58,7 +59,7 @@ const Footer = () => {
     }}
 ></div>
 <div 
-                    className=" absolute overflow-hidden top-[00px] right-[-600] top-[-150] transform -translate-x-1/2 w-[500px] h-[500px] bg-white/50 opacity-20 rounded-full"
+                    className=" absolute overflow-hidden  top-[-300] right-[0%] transform translate-x-1/2 w-[500px] h-[500px] bg-white/50 opacity-20 rounded-full"
                     style={{
                         zIndex: 0,
                         filter: "blur(500px)",
