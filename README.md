@@ -42,7 +42,7 @@ Accès à mes réseaux sociaux, liens utiles et possibilité de télécharger mo
 3. **Accessibilité** : Permettre une navigation intuitive sur tous les appareils
 
 ## 🌐 Aperçu en ligne
-Accédez à la démo ici : [![Lien vers le portfolio]()](https://portfolio-killian-codes-v2.vercel.app/)
+Accédez à la démo live : [![Lien vers le portfolio]()](https://portfolio-killian-codes-v2.vercel.app/)
 
 Merci pour votre intérêt ! Je suis impatient de collaborer avec des vous, et de continuer à apprendre et innover dans la tech.
 
