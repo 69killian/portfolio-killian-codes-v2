@@ -26,7 +26,7 @@ const MarqueeProject = () => {
           { src: shoesea, alt: "Shoesea, Site de chaussures en ligne", link: "https://shoes-ecommerce-tailwind.vercel.app/" },
           { src: portfolio, alt: "Portfolio Personnel", link: "https://github.com/69killian/portfolio-killian-codes-v2" },
           { src: pricing, alt: "Pricing Cards Challenge", link: "https://modern-landing-page-pricing-vuejs.vercel.app/" },
-          { src: cards, alt: "Cards Product", link: "https://product-cards-spikes-challenge-react.vercel.app/" },
+          { src: cards, alt: "Landing page cards", link: "https://landing-page-card-product.vercel.app/" },
         ].map((image, index) => (
           <div key={index} data-aos="fade-up" className="relative group">
             {/* Envelopper l'image avec un lien */}
