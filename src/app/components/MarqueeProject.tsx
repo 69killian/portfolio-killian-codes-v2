@@ -4,8 +4,8 @@ import Image from 'next/image';
 import stripint from "../../../public/black.png";
 import arcadia from "../../../public/arcadia.png";
 import shoesea from "../../../public/shoesea.png";
-import portfolio from "../../../public/portfolio.png";
-import pricing from "../../../public/pricing.png";
+import admina from "../../../public/admina.png";
+import modea from "../../../public/modea.png";
 import cards from "../../../public/cards.png";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
@@ -24,8 +24,8 @@ const MarqueeProject = () => {
           { src: stripint, alt: "Stripint, Intégration Stripe", link: "https://landing-page-stripe-subscription-two.vercel.app/" },
           { src: arcadia, alt: "Arcadia, Zoo de Bretagne", link: "https://github.com/69killian/Arcadia-Zoo" },
           { src: shoesea, alt: "Shoesea, Site de chaussures en ligne", link: "https://shoes-ecommerce-tailwind.vercel.app/" },
-          { src: portfolio, alt: "Portfolio Personnel", link: "https://github.com/69killian/portfolio-killian-codes-v2" },
-          { src: pricing, alt: "Pricing Cards Challenge", link: "https://modern-landing-page-pricing-vuejs.vercel.app/" },
+          { src: admina, alt: "Admina", link: "https://just-branding-655225.framer.app/" },
+          { src: modea, alt: "Modea", link: "https://modea-e-commerce-full-stack-app-store.vercel.app/" },
           { src: cards, alt: "Landing page cards", link: "https://landing-page-card-product.vercel.app/" },
         ].map((image, index) => (
           <div key={index} data-aos="fade-up" className="relative group">
