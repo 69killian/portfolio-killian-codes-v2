@@ -7,7 +7,10 @@ import shoesea from "../../../public/shoesea.png";
 import admina from "../../../public/admina.png";
 import modea from "../../../public/modea.png";
 import cards from "../../../public/cards.png";
+import Pricing from "../../../public/pricing.png";
 import AOS from 'aos';
+import Paste from '../../../public/Paste.png';
+import modeaadmin from '../../../public/modeadmin.png';
 import 'aos/dist/aos.css';
 
 const MarqueeProject = () => {
@@ -22,10 +25,13 @@ const MarqueeProject = () => {
       <div data-aos="fade-up" className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-3 p-10 gap-8 items-center justify-center text-center">
         {[
           { src: stripint, alt: "Stripint, Intégration Stripe", link: "https://landing-page-stripe-subscription-two.vercel.app/" },
+          { src: admina, alt: "Admina", link: "https://just-branding-655225.framer.app/" },
+          { src: Paste, alt: "Paste", link: "https://mighty-travel-887542.framer.app/" },
+          { src: Pricing, alt: "Pricing Landing Page", link: "https://modern-landing-page-pricing-vuejs.vercel.app/" },
           { src: arcadia, alt: "Arcadia, Zoo de Bretagne", link: "https://github.com/69killian/Arcadia-Zoo" },
           { src: shoesea, alt: "Shoesea, Site de chaussures en ligne", link: "https://shoes-ecommerce-tailwind.vercel.app/" },
-          { src: admina, alt: "Admina", link: "https://just-branding-655225.framer.app/" },
           { src: modea, alt: "Modea", link: "https://modea-e-commerce-full-stack-app-store.vercel.app/" },
+          { src: modeaadmin, alt: "Modea Admin", link: "https://modea-e-commerce-full-stack-app-dashboard.vercel.app/" },
           { src: cards, alt: "Landing page cards", link: "https://landing-page-card-product.vercel.app/" },
         ].map((image, index) => (
           <div key={index} data-aos="fade-up" className="relative group">

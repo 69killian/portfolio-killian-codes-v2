@@ -118,7 +118,7 @@ const Service = () => {
             <p className="text-gray-400">
               - Compréhension des besoins métier du client (problèmes,
               objectifs, utilisateurs cibles) <br />- Rédaction d’un cahier des
-              charges technique et fonctionnel
+              charges technique
             </p>
           </div>
 

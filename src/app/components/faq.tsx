@@ -11,6 +11,10 @@ export default function FAQ() {
 
   const faqs = [
     {
+      question: "Depuis combien d'années faites-vous cela ?",
+      answer: "Je suis dans le développement web depuis 2 ans.",
+    },
+    {
       question: "Quelle est votre approche du développement web ?",
       answer:
         "Je privilégie une approche centrée sur la performance et l'expérience utilisateur. Chaque projet est développé avec les meilleures pratiques actuelles, en utilisant des technologies modernes comme Next.js et PHP pour créer des solutions robustes et évolutives.",
@@ -25,22 +29,17 @@ export default function FAQ() {
       answer:
         "Oui, je propose un support technique et des mises à jour pendant 3 mois après le lancement. Des contrats de maintenance à plus long terme sont également disponibles.",
     },
-     {
-      question: "Quelle est votre approche du développement web ?",
-      answer:
-        "Je privilégie une approche centrée sur la performance et l'expérience utilisateur. Chaque projet est développé avec les meilleures pratiques actuelles, en utilisant des technologies modernes comme Next.js et PHP pour créer des solutions robustes et évolutives.",
+    {
+      question: "Faites-vous des missions de longue durée ?",
+      answer: "Oui, je suis ouvert aux missions de longue durée selon les besoins du client.",
     },
     {
-      question: "Combien de temps faut-il pour réaliser une landing page ?",
+      question: "Utilisez-vous des bases de données dans vos projets ?",
       answer:
-        "Le délai typique pour une landing page sur mesure est de 2 à 3 semaines, incluant les phases de conception, développement et révisions. Ce délai peut varier selon la complexité du projet.",
-    },
-    {
-      question: "Proposez-vous un support après la mise en ligne ?",
-      answer:
-        "Oui, je propose un support technique et des mises à jour pendant 3 mois après le lancement. Des contrats de maintenance à plus long terme sont également disponibles.",
+        "Oui, j'utilise Supabase pour du PostgreSQL, Prisma pour les ORM, Laravel dans certains projets, et MongoDB pour du NoSQL.",
     },
   ];
+  
 
   useEffect(() => {
     AOS.init({duration: 1000});
