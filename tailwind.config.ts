@@ -86,7 +86,10 @@ export default {
   					transform: 'translateZ(0) rotate(360deg)'
   				}
   			}
-  		}
+  		},
+		  screens: {
+			xs: { max: "403px" } // Ajout du breakpoint xs pour < 300px
+		}
   	}
   },
   plugins: [require("tailwindcss-animate")],

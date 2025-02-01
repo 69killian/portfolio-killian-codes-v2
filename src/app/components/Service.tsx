@@ -34,7 +34,7 @@ const Service = () => {
 
           {/* Glass effect container */}
           <div
-            className="relative w-full md:w-1/2 h-64 mt-8 md:mt-0 p-6 rounded-3xl bg-gradient-to-b from-white/20 to-gray-400/10 backdrop-blur-xl border border-gray-200/30 shadow-lg"
+            className="relative xs:h-[300px] w-full md:w-1/2 h-64 mt-8 md:mt-0 p-6 rounded-3xl bg-gradient-to-b from-white/20 to-gray-400/10 backdrop-blur-xl border border-gray-200/30 shadow-lg"
             style={{
               backgroundImage: `
                 radial-gradient(circle at top, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 70%),
@@ -95,7 +95,7 @@ const Service = () => {
                 rgb(var(--highlight) / 0.14) 66.67%,
                 rgb(var(--highlight) / 0.1) 100%)`,
             } as CSSProperties}
-            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            className="flex aspect-[2/1] xs:h-[300px] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
             [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
             shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
             data-aos="fade-up"
@@ -134,7 +134,7 @@ const Service = () => {
                 rgb(var(--highlight) / 0.14) 66.67%,
                 rgb(var(--highlight) / 0.1) 100%)`,
             } as CSSProperties}
-            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            className="flex aspect-[2/1] xs:h-[300px] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
             [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
             shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
             data-aos="fade-up"
@@ -172,7 +172,7 @@ const Service = () => {
                 rgb(var(--highlight) / 0.14) 66.67%,
                 rgb(var(--highlight) / 0.1) 100%)`,
             } as CSSProperties}
-            className="flex aspect-[2/1] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
+            className="flex aspect-[2/1] xs:h-[300px] w-full max-w-md flex-col rounded-[30px] border border-transparent p-8 text-left text-center 
             [background:padding-box_var(--bg-color),border-box_var(--border-color)] 
             shadow-[inset_0px_-4px_1px_0px_rgba(8,12,23,0.2)] relative overflow-hidden"
             data-aos="fade-up"

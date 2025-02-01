@@ -51,7 +51,7 @@ export default function Navbar() {
           </div>
 
           {/* Contact à droite */}
-          <li className="mt-1 md:mt-0">
+          <li className="mt-1 md:mt-0 xs:hidden">
             <Link href="#contact" className="flex items-center text-gray-300 hover:text-white transition-colors text-base md:text-lg">
               <GrayButton name="Contact" />
             </Link>
