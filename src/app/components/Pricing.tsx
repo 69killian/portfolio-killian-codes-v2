@@ -43,7 +43,7 @@ export default function Pricing() {
             <h3 data-aos='fade up' className="text-2xl font-bold mb-4">Landing Page Sur Mesure</h3>
             <h3 className="text-2xl font-bold mb-4">997€</h3>
             <p className="text-gray-400 mb-6">Vous bénéficierez d&apos;une landing page au design original et soigné, pensée pour atteindre vos objectifs.</p>
-            <a href="tel:+33600000000" className=" block w-full py-3 px-6 bg-gray-700 hover:bg-gray-800 text-center transition-colors duration-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10">
+            <a href="tel:+33624499165" className=" block w-full py-3 px-6 bg-gray-700 hover:bg-gray-800 text-center transition-colors duration-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10">
               <Phone className="inline-block w-5 h-5 mr-2" />
               Appelez-moi
             </a>
@@ -98,7 +98,7 @@ export default function Pricing() {
                 
                 {/* Bouton avec z-index supérieur pour être accessible */}
                 <a
-                    href="tel:+33600000000"
+                    href="tel:+33624499165"
                     className="relative z-10 block w-full py-3 px-6 bg-gray-700 hover:bg-gray-800 text-center transition-colors duration-300 bg-gray-900 rounded-[17px] p-1 shadow-md shadow-[#101010] border-t-2 border-gray-300/10"
                 >
                     <Phone className="inline-block w-5 h-5 mr-2" />

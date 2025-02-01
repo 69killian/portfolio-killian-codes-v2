@@ -41,7 +41,7 @@ export default function Contact() {
                     Information de Contact
             </h3>
             <div className="space-y-4">
-                <a href="tel:+33600000000" className="flex items-center text-gray-300 hover:text-white">
+                <a href="tel:+33624499165" className="flex items-center text-gray-300 hover:text-white">
                 <Phone className="w-5 h-5 mr-3" />
                 +33 6 24 49 91 65
                 </a>
