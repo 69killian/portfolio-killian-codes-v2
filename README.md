@@ -41,6 +41,10 @@ Accès à mes réseaux sociaux, liens utiles et possibilité de télécharger mo
 2. **Modernité** : Intégrer les dernières tendances en termes de design et de technologie grace à Next
 3. **Accessibilité** : Permettre une navigation intuitive sur tous les appareils
 
+## Mises à jour
+1. Changement de police d'écriture pour la Hero section
+2. Gestion pour les tailles d'écrans inférieurs à 400px
+
 ## 🌐 Aperçu en ligne
 Accédez à la démo live : [![Lien vers le portfolio]()](https://portfolio-killian-codes-v2.vercel.app/)
 
