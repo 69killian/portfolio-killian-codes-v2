@@ -43,7 +43,7 @@ Accès à mes réseaux sociaux, liens utiles et possibilité de télécharger mo
 
 ## Mises à jour
 1. Changement de police d'écriture pour la Hero section
-2. Gestion pour les tailles d'écrans inférieurs à 400px
+2. Gestion pour les tailles d'écrans inférieurs à 400px (Phone)
 
 ## 🌐 Aperçu en ligne
 Accédez à la démo live : [![Lien vers le portfolio]()](https://portfolio-killian-codes-v2.vercel.app/)
