@@ -24,7 +24,7 @@ const Hero = () => {
       </p>
       <div data-aos="fade-up" className="flex flex-wrap justify-center items-center gap-3 mb-6">
         {/* Boutons alignés */}
-        <Link href="https://www.overleaf.com/read/vfzbvwgrbbxc#4824aa" target="_blank">
+        <Link download href="/CV_indeed_ESGI.pdf" target="_blank">
           <Button name="Télécharger mon CV" />
         </Link>
         <div className="mt-1">
